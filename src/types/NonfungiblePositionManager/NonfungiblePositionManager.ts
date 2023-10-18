@@ -239,54 +239,6 @@ export class NonfungiblePositionManager__positionsResult {
     map.set("value11", ethereum.Value.fromUnsignedBigInt(this.value11));
     return map;
   }
-
-  getNonce(): BigInt {
-    return this.value0;
-  }
-
-  getOperator(): Address {
-    return this.value1;
-  }
-
-  getToken0(): Address {
-    return this.value2;
-  }
-
-  getToken1(): Address {
-    return this.value3;
-  }
-
-  getFee(): i32 {
-    return this.value4;
-  }
-
-  getTickLower(): i32 {
-    return this.value5;
-  }
-
-  getTickUpper(): i32 {
-    return this.value6;
-  }
-
-  getLiquidity(): BigInt {
-    return this.value7;
-  }
-
-  getFeeGrowthInside0LastX128(): BigInt {
-    return this.value8;
-  }
-
-  getFeeGrowthInside1LastX128(): BigInt {
-    return this.value9;
-  }
-
-  getTokensOwed0(): BigInt {
-    return this.value10;
-  }
-
-  getTokensOwed1(): BigInt {
-    return this.value11;
-  }
 }
 
 export class NonfungiblePositionManager extends ethereum.SmartContract {
@@ -999,9 +951,7 @@ export class MintCall__Inputs {
   }
 
   get params(): MintCallParamsStruct {
-    return changetype<MintCallParamsStruct>(
-      this._call.inputValues[0].value.toTuple()
-    );
+    return this._call.inputValues[0].value.toTuple() as MintCallParamsStruct;
   }
 }
 

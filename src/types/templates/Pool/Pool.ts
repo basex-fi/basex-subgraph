@@ -327,14 +327,6 @@ export class Pool__burnResult {
     map.set("value1", ethereum.Value.fromUnsignedBigInt(this.value1));
     return map;
   }
-
-  getAmount0(): BigInt {
-    return this.value0;
-  }
-
-  getAmount1(): BigInt {
-    return this.value1;
-  }
 }
 
 export class Pool__collectResult {
@@ -351,14 +343,6 @@ export class Pool__collectResult {
     map.set("value0", ethereum.Value.fromUnsignedBigInt(this.value0));
     map.set("value1", ethereum.Value.fromUnsignedBigInt(this.value1));
     return map;
-  }
-
-  getAmount0(): BigInt {
-    return this.value0;
-  }
-
-  getAmount1(): BigInt {
-    return this.value1;
   }
 }
 
@@ -377,14 +361,6 @@ export class Pool__collectProtocolResult {
     map.set("value1", ethereum.Value.fromUnsignedBigInt(this.value1));
     return map;
   }
-
-  getAmount0(): BigInt {
-    return this.value0;
-  }
-
-  getAmount1(): BigInt {
-    return this.value1;
-  }
 }
 
 export class Pool__mintResult {
@@ -401,14 +377,6 @@ export class Pool__mintResult {
     map.set("value0", ethereum.Value.fromUnsignedBigInt(this.value0));
     map.set("value1", ethereum.Value.fromUnsignedBigInt(this.value1));
     return map;
-  }
-
-  getAmount0(): BigInt {
-    return this.value0;
-  }
-
-  getAmount1(): BigInt {
-    return this.value1;
   }
 }
 
@@ -433,22 +401,6 @@ export class Pool__observationsResult {
     map.set("value3", ethereum.Value.fromBoolean(this.value3));
     return map;
   }
-
-  getBlockTimestamp(): BigInt {
-    return this.value0;
-  }
-
-  getTickCumulative(): BigInt {
-    return this.value1;
-  }
-
-  getSecondsPerLiquidityCumulativeX128(): BigInt {
-    return this.value2;
-  }
-
-  getInitialized(): boolean {
-    return this.value3;
-  }
 }
 
 export class Pool__observeResult {
@@ -465,14 +417,6 @@ export class Pool__observeResult {
     map.set("value0", ethereum.Value.fromSignedBigIntArray(this.value0));
     map.set("value1", ethereum.Value.fromUnsignedBigIntArray(this.value1));
     return map;
-  }
-
-  getTickCumulatives(): Array<BigInt> {
-    return this.value0;
-  }
-
-  getSecondsPerLiquidityCumulativeX128s(): Array<BigInt> {
-    return this.value1;
   }
 }
 
@@ -506,26 +450,6 @@ export class Pool__positionsResult {
     map.set("value4", ethereum.Value.fromUnsignedBigInt(this.value4));
     return map;
   }
-
-  get_liquidity(): BigInt {
-    return this.value0;
-  }
-
-  getFeeGrowthInside0LastX128(): BigInt {
-    return this.value1;
-  }
-
-  getFeeGrowthInside1LastX128(): BigInt {
-    return this.value2;
-  }
-
-  getTokensOwed0(): BigInt {
-    return this.value3;
-  }
-
-  getTokensOwed1(): BigInt {
-    return this.value4;
-  }
 }
 
 export class Pool__protocolFeesResult {
@@ -542,14 +466,6 @@ export class Pool__protocolFeesResult {
     map.set("value0", ethereum.Value.fromUnsignedBigInt(this.value0));
     map.set("value1", ethereum.Value.fromUnsignedBigInt(this.value1));
     return map;
-  }
-
-  getToken0(): BigInt {
-    return this.value0;
-  }
-
-  getToken1(): BigInt {
-    return this.value1;
   }
 }
 
@@ -603,34 +519,6 @@ export class Pool__slot0Result {
     map.set("value6", ethereum.Value.fromBoolean(this.value6));
     return map;
   }
-
-  getSqrtPriceX96(): BigInt {
-    return this.value0;
-  }
-
-  getTick(): i32 {
-    return this.value1;
-  }
-
-  getObservationIndex(): i32 {
-    return this.value2;
-  }
-
-  getObservationCardinality(): i32 {
-    return this.value3;
-  }
-
-  getObservationCardinalityNext(): i32 {
-    return this.value4;
-  }
-
-  getFeeProtocol(): i32 {
-    return this.value5;
-  }
-
-  getUnlocked(): boolean {
-    return this.value6;
-  }
 }
 
 export class Pool__snapshotCumulativesInsideResult {
@@ -651,18 +539,6 @@ export class Pool__snapshotCumulativesInsideResult {
     map.set("value2", ethereum.Value.fromUnsignedBigInt(this.value2));
     return map;
   }
-
-  getTickCumulativeInside(): BigInt {
-    return this.value0;
-  }
-
-  getSecondsPerLiquidityInsideX128(): BigInt {
-    return this.value1;
-  }
-
-  getSecondsInside(): BigInt {
-    return this.value2;
-  }
 }
 
 export class Pool__swapResult {
@@ -679,14 +555,6 @@ export class Pool__swapResult {
     map.set("value0", ethereum.Value.fromSignedBigInt(this.value0));
     map.set("value1", ethereum.Value.fromSignedBigInt(this.value1));
     return map;
-  }
-
-  getAmount0(): BigInt {
-    return this.value0;
-  }
-
-  getAmount1(): BigInt {
-    return this.value1;
   }
 }
 
@@ -731,38 +599,6 @@ export class Pool__ticksResult {
     map.set("value6", ethereum.Value.fromUnsignedBigInt(this.value6));
     map.set("value7", ethereum.Value.fromBoolean(this.value7));
     return map;
-  }
-
-  getLiquidityGross(): BigInt {
-    return this.value0;
-  }
-
-  getLiquidityNet(): BigInt {
-    return this.value1;
-  }
-
-  getFeeGrowthOutside0X128(): BigInt {
-    return this.value2;
-  }
-
-  getFeeGrowthOutside1X128(): BigInt {
-    return this.value3;
-  }
-
-  getTickCumulativeOutside(): BigInt {
-    return this.value4;
-  }
-
-  getSecondsPerLiquidityOutsideX128(): BigInt {
-    return this.value5;
-  }
-
-  getSecondsOutside(): BigInt {
-    return this.value6;
-  }
-
-  getInitialized(): boolean {
-    return this.value7;
   }
 }
 
