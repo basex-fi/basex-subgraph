@@ -4,7 +4,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: base
+    network: base-testnet
     source:
       address: "0x7721FFcbf6af0bd43FCE74B8C450cEeBfDCe8DE3"
       abi: Factory
@@ -33,7 +33,7 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: base
+    network: base-testnet
     source:
       address: '0xdd307c2D5E8756955967DD72eB31fbC8f429b0F8'
       abi: NonfungiblePositionManager
@@ -67,7 +67,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: base
+    network: base-testnet
     source:
       abi: Pool
     mapping:

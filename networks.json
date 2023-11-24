@@ -1,5 +1,5 @@
 {
-  "base": {
+  "base-testnet": {
     "factory": {
       "address": "0x7721FFcbf6af0bd43FCE74B8C450cEeBfDCe8DE3",
       "startBlock": 12000000
