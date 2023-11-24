@@ -1,8 +1,8 @@
 {
   "base": {
     "factory": {
-      "address": "0xdC323d16C451819890805737997F4Ede96b95e3e",
-      "startBlock": 4159890
+      "address": "0x7721FFcbf6af0bd43FCE74B8C450cEeBfDCe8DE3",
+      "startBlock": 12000000
     }
   }
 }

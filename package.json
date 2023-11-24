@@ -9,7 +9,7 @@
     "create-local": "graph create basex-fi/basex --node http://127.0.0.1:8020",
     "auth": "graph auth --studio $DEPLOY_TOKEN",
     "deploy-local": "graph deploy basex-fi/basex --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy": "graph deploy --studio basex --debug",
+    "deploy": "graph deploy --studio basex-testnet --debug",
     "deploy-dev": "graph deploy basex-fi/basex --ipfs http://35.197.14.14:5000/ --node http://35.197.14.14:8020/ --debug",
     "deploy-staging": "graph deploy $THE_GRAPH_GITHUB_USER/$THE_GRAPH_SUBGRAPH_NAME /Uniswap --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
     "watch-local": "graph deploy basex-fi/basex --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
