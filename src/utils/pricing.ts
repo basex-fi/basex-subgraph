@@ -11,6 +11,9 @@ const WETH_USDC_05_POOL = '0x0abe1765039d980da385501544afe9c4bb84b2da'
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
+  '0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452', // wstETH
+  '0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22', // cbETH
+  '0x940181a94a35a4569e4529a3cdfb74e38fd98631', // AERO
   '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913', // USDC
   '0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca', // USDbC
   '0x50c5725949a6f0c72e6c4a641f24049a917db0cb', // DAI
@@ -24,7 +27,7 @@ let STABLE_COINS: string[] = [
   '0xeb466342c4d449bc9f53a865d5cb90586f405215', // axlUSDC
 ]
 
-let MINIMUM_ETH_LOCKED = BigDecimal.fromString('1')
+let MINIMUM_ETH_LOCKED = BigDecimal.fromString('0.01')
 
 let Q192 = 2 ** 192
 export function sqrtPriceX96ToTokenPrices(sqrtPriceX96: BigInt, token0: Token, token1: Token): BigDecimal[] {
