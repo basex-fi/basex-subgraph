@@ -64,6 +64,587 @@ dataSources:
           handler: handleCollect
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken
+    network: base
+    source:
+      address: '0x89BD0737F2B860535711678259b7fB931F493344'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        # - event: MintEvent(indexed address,indexed address,uint256)
+        #   handler: handleMint
+        # - event: BurnEvent(indexed address,uint256)
+        #   handler: handleBurn
+  - kind: ethereum/contract
+    name: HypervisorToken2
+    network: base
+    source:
+      address: '0xcD5A60eb030300661cAf97244aE98e1D5A70f2c8'
+      abi: ERC20
+      startBlock: 4252220
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken3
+    network: base
+    source:
+      address: '0xa05c6bbd24d3e6b89e1b5ebb668bef9ecb92484d'
+      abi: ERC20
+      startBlock: 7537340
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken4
+    network: base
+    source:
+      address: '0x13ed11a6c01a4b6e140203ebb6690c3661768ef6'
+      abi: ERC20
+      startBlock: 7537340
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken5
+    network: base
+    source:
+      address: '0x7b079aeedcc830c1097cad9475726d67e8e969b2'
+      abi: ERC20
+      startBlock: 7578060
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken6
+    network: base
+    source:
+      address: '0xe503c1dfd7012e72af4c415f4c5e8abf5b45c25f'
+      abi: ERC20
+      startBlock: 7578070
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken7
+    network: base
+    source:
+      address: '0x921c7ac35d9a528440b75137066adb1547289555'
+      abi: ERC20
+      startBlock: 7537410
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken8
+    network: base
+    source:
+      address: '0x10bf6e7b28b1cffb1c047d7f815953931e5ee947'
+      abi: ERC20
+      startBlock: 7537440
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken9
+    network: base
+    source:
+      address: '0xfd59e64025d8dc9a5e363ec3c88c632d1657755b'
+      abi: ERC20
+      startBlock: 7537450
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken10
+    network: base
+    source:
+      address: '0xd3c480ec7a47596ff8d63396227d1f7dc728a7f0'
+      abi: ERC20
+      startBlock: 7537460
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken11
+    network: base
+    source:
+      address: '0xbd2383816bab04e46b69801cca7e92d34ab94d3f'
+      abi: ERC20
+      startBlock: 7537470
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypervisorToken12
+    network: base
+    source:
+      address: '0xed044cd5654ad208b1bc594fd108c132224e3f3c'
+      abi: ERC20
+      startBlock: 7537480
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - HypervisorToken
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: HypeRegistry
+    network: base
+    source:
+      address: '0xb24dc81f8be7284c76c7cf865b803807b3c2ef55'
+      abi: HypeRegistry
+      startBlock: 4249060
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hype-registry.ts
+      entities:
+        - Hypervisor
+      abis:
+        - name: HypeRegistry
+          file: ./abis/HypeRegistry.json
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: HypeAdded(address,uint256)
+          handler: handleHypeAdded
+  
+  - kind: ethereum/contract
+    name: SteerToken
+    network: base
+    source:
+      address: '0x263a02723d150a441ed6e74ba38b03f54539e3b8'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: SteerToken1
+    network: base
+    source:
+      address: '0x6367FAb7aefEd45938A9cAcDD60a71bb35278793'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer  
+  - kind: ethereum/contract
+    name: SteerToken2
+    network: base
+    source:
+      address: '0x354be34732a9a6f32cae205c41693ad6d49acb1d'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer  
+  - kind: ethereum/contract
+    name: SteerToken3
+    network: base
+    source:
+      address: '0x145612e9959805194ca55950f79b1f63247c771d'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer 
+  - kind: ethereum/contract
+    name: SteerToken4
+    network: base
+    source:
+      address: '0x8a08902d0d6a7e7a6abaa420cf7d03fcc6d0492b'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer 
+  - kind: ethereum/contract
+    name: SteerToken5
+    network: base
+    source:
+      address: '0xe62cccd997aa6d961bb9964e8d4d27a165c21997'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: SteerToken6
+    network: base
+    source:
+      address: '0x5e081bfe7bfee387464e84278909768604f7ae33'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: SteerToken7
+    network: base
+    source:
+      address: '0x657cca4b0abe0989b9cb352228ac7bb2caf24c2c'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: SteerToken8
+    network: base
+    source:
+      address: '0x84a1b346796d40fcdc0c68759bcd2d8fe06514a1'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: SteerToken9
+    network: base
+    source:
+      address: '0xbcd404eef6d423291c0c19241bc50b18f356e1e8'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: SteerToken10
+    network: base
+    source:
+      address: '0xb243bdf358efc809f2c72ae13bceecc521a9ca54'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+  - kind: ethereum/contract
+    name: SteerToken11
+    network: base
+    source:
+      address: '0xb5f40954ba9dfbe873a049f4a062f4617bfb9f9d'
+      abi: ERC20
+      startBlock: 4252118
+    mapping:
+      kind: ethereum/erc20
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/steer-token.ts
+      entities:
+        - SteerToken
+        - SteerBalance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
 templates:
   - kind: ethereum/contract
     name: Pool
@@ -96,4 +677,41 @@ templates:
           handler: handleBurn
         - event: Flash(indexed address,indexed address,uint256,uint256,uint256,uint256)
           handler: handleFlash
-
+  - kind: ethereum/contract
+    name: Hypervisor
+    network: base
+    source:
+      abi: Hypervisor
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor.ts
+      entities:
+        - Hypervisor
+      abis:
+        - name: Hypervisor
+          file: ./abis/Hypervisor.json
+      eventHandlers:
+        - event: Deposit(indexed address,indexed address,uint256,uint256,uint256)
+          handler: handleDeposit
+        - event: Withdraw(indexed address,indexed address,uint256,uint256,uint256)
+          handler: handleWithdraw
+  - kind: ethereum/contract
+    name: SteerContract
+    network: base
+    source:
+      abi: SteerToken
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ./src/mappings/hypervisor-token.ts
+      entities:
+        - SteerToken
+      abis:
+        - name: SteerToken
+          file: ./abis/SteerToken.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer

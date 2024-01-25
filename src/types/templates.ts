@@ -15,3 +15,31 @@ export class Pool extends DataSourceTemplate {
     DataSourceTemplate.createWithContext("Pool", [address.toHex()], context);
   }
 }
+
+export class Hypervisor extends DataSourceTemplate {
+  static create(address: Address): void {
+    DataSourceTemplate.create("Hypervisor", [address.toHex()]);
+  }
+
+  static createWithContext(address: Address, context: DataSourceContext): void {
+    DataSourceTemplate.createWithContext(
+      "Hypervisor",
+      [address.toHex()],
+      context
+    );
+  }
+}
+
+export class SteerContract extends DataSourceTemplate {
+  static create(address: Address): void {
+    DataSourceTemplate.create("SteerContract", [address.toHex()]);
+  }
+
+  static createWithContext(address: Address, context: DataSourceContext): void {
+    DataSourceTemplate.createWithContext(
+      "SteerContract",
+      [address.toHex()],
+      context
+    );
+  }
+}

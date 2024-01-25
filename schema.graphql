@@ -651,3 +651,65 @@ type TokenHourData @entity {
   # close price USD
   close: BigDecimal!
 }
+
+type Hypervisor @entity {
+  id: ID!
+  created: Int!
+  symbol: String!
+  timestamp: BigInt!
+  deposit: [Deposit!]! @derivedFrom(field: "hypervisor")
+  withdraw: [Withdraw!]! @derivedFrom(field: "hypervisor")
+}
+
+type Deposit @entity {
+  id: ID!
+  hypervisor: Hypervisor!
+  owner: Bytes!
+  amount0: BigDecimal
+  amount1: BigDecimal
+  amountUSD: BigDecimal
+}
+
+type Withdraw @entity {
+  id: ID!
+  hypervisor: Hypervisor!
+  owner: Bytes!
+  amount0: BigDecimal
+  amount1: BigDecimal
+  amountUSD: BigDecimal
+}
+
+type HypervisorToken @entity {
+  id: ID!
+  name: String!
+  symbol: String!
+  totalSupply: BigInt!
+  balances: [Balance!]! @derivedFrom(field: "hypervisorToken")
+  pool: Bytes!
+}
+
+type Balance @entity {
+  id: ID!
+  hypervisorToken: HypervisorToken
+  owner: Bytes
+  amount: BigInt
+  timestamp: BigInt!
+}
+
+type SteerToken @entity {
+  id: ID!
+  name: String!
+  symbol: String!
+  totalSupply: BigInt!
+  balances: [SteerBalance!]! @derivedFrom(field: "steerToken")
+  pool: Bytes!
+}
+
+
+type SteerBalance @entity {
+  id: ID!
+  steerToken: SteerToken
+  owner: Bytes
+  amount: BigInt
+  timestamp: BigInt!
+}
