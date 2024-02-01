@@ -3763,6 +3763,60 @@ export class SteerToken extends Entity {
     this.set("totalSupply", Value.fromBigInt(value));
   }
 
+  get token0(): Bytes {
+    let value = this.get("token0");
+    return value.toBytes();
+  }
+
+  set token0(value: Bytes) {
+    this.set("token0", Value.fromBytes(value));
+  }
+
+  get token0Balance(): BigInt {
+    let value = this.get("token0Balance");
+    return value.toBigInt();
+  }
+
+  set token0Balance(value: BigInt) {
+    this.set("token0Balance", Value.fromBigInt(value));
+  }
+
+  get token0Decimals(): BigInt {
+    let value = this.get("token0Decimals");
+    return value.toBigInt();
+  }
+
+  set token0Decimals(value: BigInt) {
+    this.set("token0Decimals", Value.fromBigInt(value));
+  }
+
+  get token1(): Bytes {
+    let value = this.get("token1");
+    return value.toBytes();
+  }
+
+  set token1(value: Bytes) {
+    this.set("token1", Value.fromBytes(value));
+  }
+
+  get token1Balance(): BigInt {
+    let value = this.get("token1Balance");
+    return value.toBigInt();
+  }
+
+  set token1Balance(value: BigInt) {
+    this.set("token1Balance", Value.fromBigInt(value));
+  }
+
+  get token1Decimals(): BigInt {
+    let value = this.get("token1Decimals");
+    return value.toBigInt();
+  }
+
+  set token1Decimals(value: BigInt) {
+    this.set("token1Decimals", Value.fromBigInt(value));
+  }
+
   get balances(): Array<string> {
     let value = this.get("balances");
     return value.toStringArray();

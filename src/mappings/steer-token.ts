@@ -1,4 +1,5 @@
 import { Balance, SteerBalance, SteerToken } from '../types/schema'
+import { SteerPeriphery } from '../types/SteerToken/SteerPeriphery'
 import { ERC20, Transfer } from '../types/Factory/ERC20'
 import { ZERO_BI, ONE_BI, ZERO_BD } from '../utils/constants'
 import { Address, BigInt } from '@graphprotocol/graph-ts'
@@ -9,6 +10,9 @@ export function handleTransfer(event: Transfer): void {
   let steerToken = SteerToken.load(event.address.toHex())
   let contract = ERC20.bind(event.address)
   let hypervisorContract = SteerContract.bind(event.address)
+  let steerPeripheryContract = SteerPeriphery.bind(Address.fromString("0x16BA7102271dC83Fff2f709691c2B601DAD7668e"))
+
+  let info = steerPeripheryContract.vaultDetailsByAddress(event.address)
 
   if (steerToken == null) {
     steerToken = new SteerToken(event.address.toHex())
@@ -20,7 +24,6 @@ export function handleTransfer(event: Transfer): void {
     steerToken.name = tokenName
     steerToken.symbol = tokenSymbol
     steerToken.totalSupply = ZERO_BI
-    steerToken.save()
   }
 
   let fromAddress = event.params.from.toHex()
@@ -32,6 +35,12 @@ export function handleTransfer(event: Transfer): void {
 
   let totalSupply = hypervisorContract.totalSupply()
   steerToken.totalSupply = totalSupply
+  steerToken.token0 = info.token0
+  steerToken.token0Balance = info.token0Balance
+  steerToken.token0Decimals = info.token0Decimals
+  steerToken.token1 = info.token1
+  steerToken.token1Balance = info.token1Balance
+  steerToken.token1Decimals = info.token1Decimals
 
   steerToken.save()
 }

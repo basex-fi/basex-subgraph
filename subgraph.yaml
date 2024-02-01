@@ -389,6 +389,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
@@ -412,6 +414,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer  
@@ -435,6 +439,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer  
@@ -458,6 +464,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer 
@@ -481,6 +489,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer 
@@ -504,6 +514,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
@@ -527,6 +539,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
@@ -550,6 +564,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
@@ -573,6 +589,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
@@ -596,6 +614,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
@@ -619,6 +639,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
@@ -642,6 +664,8 @@ dataSources:
           file: ./abis/ERC20.json
         - name: SteerToken
           file: ./abis/SteerToken.json
+        - name: SteerPeriphery
+          file: ./abis/SteerPeriphery.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer

@@ -701,6 +701,12 @@ type SteerToken @entity {
   name: String!
   symbol: String!
   totalSupply: BigInt!
+  token0: Bytes!
+  token0Balance: BigInt!
+  token0Decimals: BigInt!
+  token1: Bytes!
+  token1Balance: BigInt!
+  token1Decimals: BigInt!
   balances: [SteerBalance!]! @derivedFrom(field: "steerToken")
   pool: Bytes!
 }
